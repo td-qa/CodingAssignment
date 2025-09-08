@@ -135,10 +135,12 @@ If this were a shared, stable app, I’d expand page objects and add simple smok
 
 ## Troubleshooting
 
-* **CDP/DevTools warning on Chrome 140 or later**
+**CDP/DevTools warning on Chrome 140 or later**
+
 * Expected. Selenium runs fine without DevTools. If you prefer a warning-free run, pin Chrome-for-Testing 139 locally and pass a custom binary path via `-Dchrome.binary=<path>`.
 
-* **Screenshots not appearing**
+**Screenshots not appearing**
+
 * Ensure tests run **from Maven/IDE**, not `jshell`; look under `target/screenshots/`. The directory is created in `BaseUiTest`.
   
 ## Security Note
